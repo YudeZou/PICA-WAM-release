@@ -11,7 +11,11 @@ Yude Zou<sup>1,2*</sup> &nbsp; Yifei Yao<sup>2*</sup> &nbsp; Guanbo Jiao<sup>2,3
 <a href="https://huggingface.co/xdzouyd/PICA-WAM"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-PICA--WAM-ffc107.svg" alt="Hugging Face"></a>
 </p>
 
-<!-- explainer video -->
+
+
+https://github.com/user-attachments/assets/f086d6c9-da49-4674-92af-b6c0186f4bc5
+
+
 
 ![PICA-WAM teaser](assets/teaser.png)
 
