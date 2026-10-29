@@ -8,11 +8,18 @@ Yude Zou<sup>1,2*</sup> &nbsp; Yifei Yao<sup>2*</sup> &nbsp; Guanbo Jiao<sup>2,3
 
 <p align="center">
 <a href="https://arxiv.org/abs/2610.26813"><img src="https://img.shields.io/badge/arXiv-2610.26813-b31b1b.svg" alt="arXiv"></a>
+<a href="https://huggingface.co/xdzouyd/PICA-WAM"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-PICA--WAM-ffc107.svg" alt="Hugging Face"></a>
 </p>
+
+<!-- explainer video -->
 
 ![PICA-WAM teaser](assets/teaser.png)
 
 World Action Models (WAMs) jointly predict future video and generate actions, yet remain sensitive to task-irrelevant visual perturbations, i.e., changes in visual appearance that should not affect robot behavior. We identify a gap in conventional WAM training: video prediction encourages representations to preserve appearance information, while action generation does not explicitly enforce invariance to task-irrelevant appearance. Data augmentation exposes WAMs to such perturbations but does not require perturbed and nominal observations to produce consistent action representations, and alignment with external pretrained features does not guarantee the desired invariance. To address this gap, we propose **PICA-WAM**, a self-supervised training framework that casts perturbation invariance as an auxiliary **cross-appearance self-alignment** task for WAMs. An exponential-moving-average (EMA) teacher processes the nominal observation to provide a deeper-layer target, while the online WAM processes a perturbed observation and aligns its shallower-layer action representation to this target through a lightweight projection head. Across four strong WAMs evaluated on RoboTwin 2.0, LIBERO-Plus, EBench, and a real robot, PICA-WAM consistently improves robustness under visual perturbations, preserves nominal performance in simulation, and raises the real robot success rate. PICA-WAM further reduces the sensitivity of video features to task-irrelevant appearance and its propagation into actions, as shown by paired layer-wise diagnostics.
+
+## News
+
+- **2026-10-29**: Preview release of InternW0-Δ + PICA-WAM on RoboTwin 2.0: checkpoint on [Hugging Face](https://huggingface.co/xdzouyd/PICA-WAM), training and evaluation code in [`InternW0-Delta-RoboTwin/`](InternW0-Delta-RoboTwin/). The model is also submitted to [XPolicyLab](https://github.com/XPolicyLab/XPolicyLab/pull/212).
 
 ## Method
 
@@ -40,7 +47,7 @@ PICA-WAM is applied to four WAMs: Fast-WAM (no embodied pretraining) and the emb
 | LingBot-VA | 81.2 | 29.8 | 55.5 |
 | **+ PICA-WAM** | 83.1 | 57.0 | **70.1** |
 | InternW0-Δ | 90.0 | 71.9 | 81.0 |
-| **+ PICA-WAM** | 90.7 | 74.7 | **82.7** |
+| **+ PICA-WAM** [🤗](https://huggingface.co/xdzouyd/PICA-WAM) | 90.7 | 74.7 | **82.7** |
 
 ### EBench
 
@@ -71,10 +78,9 @@ Augmentation alone leaves late video layers sensitive to task-irrelevant appeara
 
 ## Open-source plan
 
-We plan to release the code and checkpoints in **November 2026**.
-
 - [x] Project repository with figures and main results
 - [x] [Paper on arXiv](https://arxiv.org/abs/2610.26813)
+- [x] Preview: InternW0-Δ + PICA-WAM on RoboTwin 2.0 (checkpoint, training and evaluation code)
 - [ ] PICA-WAM checkpoints and evaluation code
 - [ ] PICA-WAM training code
 
