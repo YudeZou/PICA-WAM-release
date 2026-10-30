@@ -23,7 +23,7 @@ World Action Models (WAMs) jointly predict future video and generate actions, ye
 
 ## News
 
-- **2026-10-29**: Preview release of InternW0-Δ + PICA-WAM on RoboTwin 2.0: checkpoint on [Hugging Face](https://huggingface.co/xdzouyd/PICA-WAM), training and evaluation code in [`InternW0-Delta-RoboTwin/`](InternW0-Delta-RoboTwin/). The model is also submitted to [XPolicyLab](https://github.com/XPolicyLab/XPolicyLab/pull/212).
+- **2026-10-29**: Preview release of InternW0-Δ + PICA-WAM on RoboTwin 2.0: checkpoint on [Hugging Face](https://huggingface.co/xdzouyd/PICA-WAM), training and evaluation code in [`InternW0-Delta-RoboTwin/`](InternW0-Delta-RoboTwin/). The model is also available in XPolicyLab as the [`PICA_WAM`](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PICA_WAM) policy.
 
 ## Method
 

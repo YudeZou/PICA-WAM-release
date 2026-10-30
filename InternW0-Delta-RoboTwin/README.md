@@ -1,6 +1,6 @@
 # InternW0-Δ + PICA-WAM on RoboTwin 2.0 (preview)
 
-This directory releases the training and evaluation code for the PICA-WAM RoboTwin 2.0 checkpoint, built on the InternW0-Δ backbone and trained on clean demonstrations only. It runs on its own, with the RoboTwin 2.0 simulator as the only external dependency. The model code is adapted from [InternW0-Delta](https://github.com/InternRobotics/InternW0-Delta) `90801ba`. The same model is also packaged as an [XPolicyLab](https://github.com/XPolicyLab/XPolicyLab/pull/212) adapter.
+This directory releases the training and evaluation code for the PICA-WAM RoboTwin 2.0 checkpoint, built on the InternW0-Δ backbone and trained on clean demonstrations only. It runs on its own, with the RoboTwin 2.0 simulator as the only external dependency. The model code is adapted from [InternW0-Delta](https://github.com/InternRobotics/InternW0-Delta) `90801ba`. The same model is also available in XPolicyLab as the [`PICA_WAM`](https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/PICA_WAM) policy.
 
 Checkpoint: [xdzouyd/PICA-WAM](https://huggingface.co/xdzouyd/PICA-WAM), `internw0_delta/robotwin.pt`.
 
